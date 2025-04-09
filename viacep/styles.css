@@ -1,0 +1,113 @@
+/* Resetando algumas margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo do corpo */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    padding: 50px 0;
+}
+
+/* Estilo do formulário */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do formulário */
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #343a40;
+}
+
+/* Estilos para os rótulos */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #495057;
+}
+
+/* Ajuste no estilo dos campos de entrada */
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilo do campo em foco */
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo do botão de submit */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para o botão no hover */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Ajuste para os campos de checkbox */
+.form-check-input {
+    margin-right: 10px;
+}
+
+/* Estilo para os campos de seleção (estado) */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    background-image: url('https://imageURL/icon-arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+}
+
+/* Adicionando espaçamento entre as colunas */
+.form-row {
+    margin-bottom: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    form {
+        padding: 20px;
+    }
+    button {
+        width: 100%;
+    }
+}
